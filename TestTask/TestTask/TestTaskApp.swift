@@ -2,7 +2,7 @@
 //  TestTaskApp.swift
 //  TestTask
 //
-//  Created by papa on 11.04.24.
+//  Created by MEV on 11.04.24.
 //
 
 import SwiftUI
