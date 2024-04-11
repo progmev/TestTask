@@ -22,7 +22,7 @@ struct PhotoCell: View {
             Text(photo.imageName)
         }
         .navigationDestination(isPresented: self.$moveToDetailScreen, destination: {
-            //DetailView(photo: photo)
+            DetailView(photo: photo)
         })
         .onTapGesture {
             moveToDetailScreen.toggle()
