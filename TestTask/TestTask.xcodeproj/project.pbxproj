@@ -14,6 +14,9 @@
 		33AFB6A52BC7C27700E52167 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 33AFB6A42BC7C27700E52167 /* QGrid */; };
 		33AFB6A82BC7C2FB00E52167 /* Albom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AFB6A72BC7C2FB00E52167 /* Albom.swift */; };
 		33AFB6AB2BC7C34A00E52167 /* CollectionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AFB6AA2BC7C34A00E52167 /* CollectionStyle.swift */; };
+		33AFB6AE2BC7C39F00E52167 /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AFB6AD2BC7C39F00E52167 /* PhotoCell.swift */; };
+		33AFB6B12BC7C43100E52167 /* AccessCameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AFB6B02BC7C43100E52167 /* AccessCameraView.swift */; };
+		33AFB6B32BC7C45100E52167 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AFB6B22BC7C45100E52167 /* Coordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		33AFB69C2BC7C1B100E52167 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		33AFB6A72BC7C2FB00E52167 /* Albom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Albom.swift; sourceTree = "<group>"; };
 		33AFB6AA2BC7C34A00E52167 /* CollectionStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionStyle.swift; sourceTree = "<group>"; };
+		33AFB6AD2BC7C39F00E52167 /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
+		33AFB6B02BC7C43100E52167 /* AccessCameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccessCameraView.swift; sourceTree = "<group>"; };
+		33AFB6B22BC7C45100E52167 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +66,8 @@
 				33AFB6952BC7C1AF00E52167 /* TestTaskApp.swift */,
 				33AFB6A62BC7C2DA00E52167 /* Models */,
 				33AFB6A92BC7C33700E52167 /* Enums */,
-				33AFB6972BC7C1AF00E52167 /* MainView.swift */,
+				33AFB6AC2BC7C38B00E52167 /* MainView */,
+				33AFB6AF2BC7C40F00E52167 /* CameraView */,
 				33AFB6992BC7C1B100E52167 /* Assets.xcassets */,
 				33AFB69B2BC7C1B100E52167 /* Preview Content */,
 			);
@@ -89,6 +96,24 @@
 				33AFB6AA2BC7C34A00E52167 /* CollectionStyle.swift */,
 			);
 			path = Enums;
+			sourceTree = "<group>";
+		};
+		33AFB6AC2BC7C38B00E52167 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				33AFB6972BC7C1AF00E52167 /* MainView.swift */,
+				33AFB6AD2BC7C39F00E52167 /* PhotoCell.swift */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		33AFB6AF2BC7C40F00E52167 /* CameraView */ = {
+			isa = PBXGroup;
+			children = (
+				33AFB6B02BC7C43100E52167 /* AccessCameraView.swift */,
+				33AFB6B22BC7C45100E52167 /* Coordinator.swift */,
+			);
+			path = CameraView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -168,9 +193,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				33AFB6A82BC7C2FB00E52167 /* Albom.swift in Sources */,
+				33AFB6AE2BC7C39F00E52167 /* PhotoCell.swift in Sources */,
 				33AFB6AB2BC7C34A00E52167 /* CollectionStyle.swift in Sources */,
+				33AFB6B12BC7C43100E52167 /* AccessCameraView.swift in Sources */,
 				33AFB6982BC7C1AF00E52167 /* MainView.swift in Sources */,
 				33AFB6962BC7C1AF00E52167 /* TestTaskApp.swift in Sources */,
+				33AFB6B32BC7C45100E52167 /* Coordinator.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +335,7 @@
 				DEVELOPMENT_TEAM = 7YF6HND7PM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app must use a camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -340,6 +369,7 @@
 				DEVELOPMENT_TEAM = 7YF6HND7PM;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app must use a camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
