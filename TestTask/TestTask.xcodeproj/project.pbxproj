@@ -8,18 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		33AFB6962BC7C1AF00E52167 /* TestTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AFB6952BC7C1AF00E52167 /* TestTaskApp.swift */; };
-		33AFB6982BC7C1AF00E52167 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AFB6972BC7C1AF00E52167 /* ContentView.swift */; };
+		33AFB6982BC7C1AF00E52167 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AFB6972BC7C1AF00E52167 /* MainView.swift */; };
 		33AFB69A2BC7C1B100E52167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33AFB6992BC7C1B100E52167 /* Assets.xcassets */; };
 		33AFB69D2BC7C1B100E52167 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33AFB69C2BC7C1B100E52167 /* Preview Assets.xcassets */; };
 		33AFB6A52BC7C27700E52167 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 33AFB6A42BC7C27700E52167 /* QGrid */; };
+		33AFB6A82BC7C2FB00E52167 /* Albom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AFB6A72BC7C2FB00E52167 /* Albom.swift */; };
+		33AFB6AB2BC7C34A00E52167 /* CollectionStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AFB6AA2BC7C34A00E52167 /* CollectionStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		33AFB6922BC7C1AF00E52167 /* TestTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TestTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33AFB6952BC7C1AF00E52167 /* TestTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestTaskApp.swift; sourceTree = "<group>"; };
-		33AFB6972BC7C1AF00E52167 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		33AFB6972BC7C1AF00E52167 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		33AFB6992BC7C1B100E52167 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33AFB69C2BC7C1B100E52167 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		33AFB6A72BC7C2FB00E52167 /* Albom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Albom.swift; sourceTree = "<group>"; };
+		33AFB6AA2BC7C34A00E52167 /* CollectionStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,7 +58,9 @@
 			isa = PBXGroup;
 			children = (
 				33AFB6952BC7C1AF00E52167 /* TestTaskApp.swift */,
-				33AFB6972BC7C1AF00E52167 /* ContentView.swift */,
+				33AFB6A62BC7C2DA00E52167 /* Models */,
+				33AFB6A92BC7C33700E52167 /* Enums */,
+				33AFB6972BC7C1AF00E52167 /* MainView.swift */,
 				33AFB6992BC7C1B100E52167 /* Assets.xcassets */,
 				33AFB69B2BC7C1B100E52167 /* Preview Content */,
 			);
@@ -67,6 +73,22 @@
 				33AFB69C2BC7C1B100E52167 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		33AFB6A62BC7C2DA00E52167 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				33AFB6A72BC7C2FB00E52167 /* Albom.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		33AFB6A92BC7C33700E52167 /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				33AFB6AA2BC7C34A00E52167 /* CollectionStyle.swift */,
+			);
+			path = Enums;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -145,7 +167,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				33AFB6982BC7C1AF00E52167 /* ContentView.swift in Sources */,
+				33AFB6A82BC7C2FB00E52167 /* Albom.swift in Sources */,
+				33AFB6AB2BC7C34A00E52167 /* CollectionStyle.swift in Sources */,
+				33AFB6982BC7C1AF00E52167 /* MainView.swift in Sources */,
 				33AFB6962BC7C1AF00E52167 /* TestTaskApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

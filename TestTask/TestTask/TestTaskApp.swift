@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct TestTaskApp: App {
+    
+    @StateObject private var albom: Albom = Albom()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            MainView()
+                .environmentObject(albom)
         }
     }
 }
