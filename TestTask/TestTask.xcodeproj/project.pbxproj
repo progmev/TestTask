@@ -11,6 +11,7 @@
 		33AFB6982BC7C1AF00E52167 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33AFB6972BC7C1AF00E52167 /* ContentView.swift */; };
 		33AFB69A2BC7C1B100E52167 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33AFB6992BC7C1B100E52167 /* Assets.xcassets */; };
 		33AFB69D2BC7C1B100E52167 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33AFB69C2BC7C1B100E52167 /* Preview Assets.xcassets */; };
+		33AFB6A52BC7C27700E52167 /* QGrid in Frameworks */ = {isa = PBXBuildFile; productRef = 33AFB6A42BC7C27700E52167 /* QGrid */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				33AFB6A52BC7C27700E52167 /* QGrid in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +85,9 @@
 			dependencies = (
 			);
 			name = TestTask;
+			packageProductDependencies = (
+				33AFB6A42BC7C27700E52167 /* QGrid */,
+			);
 			productName = TestTask;
 			productReference = 33AFB6922BC7C1AF00E52167 /* TestTask.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 33AFB6892BC7C1AF00E52167;
+			packageReferences = (
+				33AFB6A32BC7C27700E52167 /* XCRemoteSwiftPackageReference "QGrid" */,
+			);
 			productRefGroup = 33AFB6932BC7C1AF00E52167 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -352,6 +360,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		33AFB6A32BC7C27700E52167 /* XCRemoteSwiftPackageReference "QGrid" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Q-Mobile/QGrid";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.1.4;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		33AFB6A42BC7C27700E52167 /* QGrid */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 33AFB6A32BC7C27700E52167 /* XCRemoteSwiftPackageReference "QGrid" */;
+			productName = QGrid;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 33AFB68A2BC7C1AF00E52167 /* Project object */;
 }
